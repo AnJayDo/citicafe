@@ -1,0 +1,60 @@
+footer {
+    width: 100%;
+    background-color: #222222;
+}
+
+.footer-main-container {
+    display: flex;
+    width: 96%;
+    margin: 0px 2%;
+    padding: 60px 0;
+    justify-content: center;
+}
+
+.footer-column {
+    width: 24%;
+}
+
+.footer-column h4 {
+    color: #fff;
+}
+
+.footer-column a, p {
+    display: block;
+    color: rgb(216, 216, 216);
+    margin-bottom: 8px;
+    font-weight: normal;
+    max-width: 80%;
+}
+.footer-social {
+    display: flex;
+    width: 80%;
+}
+.footer-social a {
+    font-size: 30px;
+    margin-right: 30px;
+}
+
+.footer-signature {
+    width: 100%;
+    padding: 15px 100px;
+    background-color: black;
+}
+
+.footer-signature-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer-signature-container div {
+    margin-left: 70px;
+    font-weight: normal;
+}
+
+.footer-signature-text {
+    color: rgb(199, 199, 199);
+}
+
+.madeby {
+    color: #727272;
+}

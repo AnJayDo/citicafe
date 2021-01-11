@@ -16,3 +16,74 @@
     height: 5px;
     background-color: #e98025;
 }
+
+.customer-love .carousel-inner {
+    position: relative;
+    width: 50%;
+    margin: 10px 25%;
+    overflow: hidden;
+}
+
+.customer-love .carousel-indicators li {
+    background-color: #e98025;
+    height: 5px;
+}
+
+.customer-love .carousel-control-next, .carousel-control-prev {
+    color: rgb(56, 56, 56);
+    text-decoration: none;
+    outline: 0;
+    opacity: .9;
+    font-size: 35px;
+}
+
+.customer-love .carousel-control-next:focus, .carousel-control-next:hover, .carousel-control-prev:focus, .carousel-control-prev:hover {
+    color: #000;
+    text-decoration: none;
+    outline: 0;
+    opacity: .9;
+}
+
+.customer-slide-item {
+    width: 100%;
+    padding: 50px 0 100px 0;
+    min-height: 400px;
+}
+
+.customer-slide-item * {
+    text-align: center;
+}
+
+.customer-slide-img, .customer-slide-words, .customer-slide-name, .customer-slide-social {
+    margin: 10px 0;
+}
+
+.customer-slide-img {
+    display: flex;
+    justify-content: center;
+}
+
+.customer-slide-img img {
+    width: 100px;
+    height: 100px;
+    display: block;
+    border-radius: 50px;
+}
+
+.customer-slide-words h2 {
+    font-size: 27px;
+    font-weight: normal;
+    color: rgb(48, 48, 48);
+}
+
+.customer-slide-name h4 {
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.customer-slide-social p {
+    font-size: 20px;
+    font-weight: normal;
+    color: rgb(112, 112, 112);
+    max-width: 100%;
+}

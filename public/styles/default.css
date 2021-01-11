@@ -2,6 +2,10 @@ body {
     min-height: 100vh;
 }
 
+a, a:hover {
+    text-decoration: none;
+}
+
 .btn {
     font-weight: 700;
 }
