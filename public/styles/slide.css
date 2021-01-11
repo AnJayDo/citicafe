@@ -1,0 +1,15 @@
+.slide-container {
+    width: 94%;
+    padding-top: 150px;
+    margin: 0 3% 30px 3%;
+}
+
+.carousel-control-prev {
+    left: 0;
+    width: 80px;
+}
+
+.carousel-control-next {
+    right: 0;
+    width: 80px;
+}

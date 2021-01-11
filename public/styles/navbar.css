@@ -1,0 +1,53 @@
+* {
+    font-family: Circular;
+    margin: 0;
+    padding: 0;
+}
+
+.citinavbar {
+    width: 100%;
+    position: fixed;
+    height: 120px;
+    border-top: 5px #e98025 solid;
+    border-bottom: 1px #bdbdbd solid;
+    padding: 10px 0;
+    background-color: white;
+    z-index: 100;
+}
+
+.logo-container {
+    display: flex;
+    margin: 10px 0 20px 0;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.logo-container img {
+    display: block;
+    height: 40px;
+    width: auto;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-nav ul li {
+    margin: 0 20px;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
