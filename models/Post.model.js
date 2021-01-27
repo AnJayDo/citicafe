@@ -7,6 +7,7 @@ const postSchema = Schema({
     description: String,
     thumbnail: String,
     content: String,
+    slug: {type: String, unique: true},
     tags: [String],
     publishedAt: {type: Date, default: Date.now}
 });

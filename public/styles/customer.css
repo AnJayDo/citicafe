@@ -1,3 +1,7 @@
+.customer-love {
+    padding: 100px 0 0 0;
+}
+
 .header-text-container {
     width: 100%;
     display: flex;
@@ -86,4 +90,41 @@
     font-weight: normal;
     color: rgb(112, 112, 112);
     max-width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+    .slide-container {
+        padding-top: 96px;
+        padding-bottom: 10px;
+    }
+    .carousel-control-prev, .carousel-control-next {
+        width: 30px;
+    }
+    .customer-love .carousel-inner {
+        width: 100%;
+        margin: 10px 0;
+        padding: 0 50px; 
+    }
+    .customer-slide-item {
+        padding: 20px 0 50px 0;
+    }
+    .customer-slide-img img {
+        width: 80px;
+        height: 80px;
+    }
+    .underline-header-text {
+        width: 34%;
+        margin: 0 33%;
+    }
+    .customer-slide-words h2 {
+        font-size: 23px;
+        font-weight: 100;
+    }
+    .customer-slide-name h4 {
+        font-size: 26px;
+        font-weight: bold;
+    }
+    .customer-love .carousel-control-prev, .carousel-control-next i {
+        font-size: 20px;
+    }
 }

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Citicafe - Cà phê cóc thế hệ mới</title>
+    <%- include('partions/styles') -%>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles/default.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="/ckeditor/ckeditor.js"></script>
+</head>
+
+<body>
+    <%- include("partions/navbar") -%> 
+    <section class="blog">
+        <div class="header-text-container">
+            <div class="header-text">
+                <span>BLOG</span>
+                <div style="width: 50px; margin: 0 calc(50% - 25px);" class="underline-header-text" data-aos="fade-right"
+                data-aos-offset="400"
+                data-aos-easing="ease-in-sine"></div>
+            </div>
+        </div>
+        <ul class="blog-list">
+            <% if(posts.length>0) { %>
+                <% posts.forEach(function(post) { %>
+                    <li class="blog-item">
+                        <a href="/blog/<%= post.slug %>" class="blog-item-background" style="background-image: url(<%= post.thumbnail %>);">
+                            <!-- <img style="width: 100%; border-radius: 8px; height: auto;" src=""> -->
+                        </a>
+                        <div class="blog-item-description">
+                            <h4 class="blog-item-title">
+                                <a href="/blog/<%= post.slug %>"><%= post.title %></a>
+                                <div class="blog-publishedAt"><%= (new Date(post.publishedAt)).toLocaleDateString() %></div>
+                            </h4>
+                            <!-- <p style="color: rgb(88, 88, 88);">
+                                Tác giả: <%= post.author %>
+                            </p> -->
+                            <div class="blog-item-description-text" style="color: rgb(124, 124, 124);">
+                                <%= post.description %>
+                            </div>
+                            <div style="display: flex; margin: 3px 0;" id="tag-list">
+                                <% post.tags.forEach(function(element) { %>
+                                    <a href="/blog?tag=<%= element %>" style="color: white; background-color: black; width: fit-content; border-radius: 3px; padding: 2px 5px; font-size: 12px; margin-right: 3px;"><%= element %></a>
+                                <% }); %>
+                            </div>
+                        </div>
+                    </li>
+                <% }); %>
+            <% } else { %>
+                <div class="container" style="width: 100%;height: 30vh;margin-top: 20vh;display: block;text-align: center;align-items: center;justify-content: center;">
+                    <h1>Không có bài viết nào</h1>
+                </div>
+                <% }; %>
+        </ul>
+    </section>
+    <script>
+        AOS.init();
+    </script>
+    <script src="/js/main.js"></script>
+</body>
+</html>

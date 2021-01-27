@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Writing Server</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles/default.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="/ckeditor/ckeditor.js"></script>
+</head>
+
+<body>
+    <%- include("navbar") -%> 
+    <div class="container" style="width: 100%;height: 60vh;margin-top: 40vh;display: block;text-align: center;align-items: center;justify-content: center;">
+        <h1>Thao tác thành công.</h1>
+    </div>
+</body>
+<script>
+    setTimeout(function () {
+       window.location = "/admin/posts";
+    }, 1500)
+</script>
+</html>

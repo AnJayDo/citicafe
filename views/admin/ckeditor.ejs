@@ -4,7 +4,8 @@
         filebrowserBrowseUrl: '/upload', //upload location
         filebrowserUploadMethod: 'form',
         filebrowserUploadUrl: '/upload' //route
-    });
+    })
+    CKEDITOR.config.height = '800px'
 </script>
 <script>
     function readURL(input) {
@@ -19,7 +20,7 @@
     }
     function renderTags() {
         document.getElementById("tag-list").innerHTML = ""
-        document.getElementById("tags").value.trim().split(" ").forEach(element => {
+        document.getElementById("tags").value.trim().split("#").forEach(element => {
             document.getElementById("tag-list").innerHTML += `<div style="color: white; background-color: black; border-radius: 3px; padding: 2px 5px; font-size: 12px; margin-right: 3px;">${element}</div>`
         });
     }

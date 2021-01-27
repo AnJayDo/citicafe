@@ -58,3 +58,14 @@ footer {
 .madeby {
     color: #727272;
 }
+
+@media screen and (max-width: 1200px) {
+    .footer-main-container {
+        flex-wrap: wrap;
+    }
+    .footer-column {
+        width: 48%;
+        margin: 10px 1%;
+        padding-right: 20px;
+    }
+}

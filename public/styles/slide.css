@@ -1,7 +1,13 @@
 .slide-container {
     width: 94%;
     padding-top: 150px;
+    padding-bottom: 30px;
+    height: 100vh;
     margin: 0 3% 30px 3%;
+}
+
+.carousel.pointer-event {
+    height: 100%;
 }
 
 .carousel-control-prev {
@@ -12,4 +18,27 @@
 .carousel-control-next {
     right: 0;
     width: 80px;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.carousel-fade .carousel-item {
+    height: 100%;
+}
+
+.w-100 {
+    width: 100%!important;
+    height: 100%!important;
+}
+
+@media screen and (max-width: 1200px) {
+    .slide-container {
+        padding-top: 96px;
+        padding-bottom: 10px;
+    }
+    .carousel-control-prev, .carousel-control-next {
+        width: 30px;
+    }
 }
